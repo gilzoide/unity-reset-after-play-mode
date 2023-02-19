@@ -1,0 +1,11 @@
+{
+  "name": "com.gilzoide.reset-after-play-mode",
+  "displayName": "Reset After Play Mode",
+  "version": "1.0.0",
+  "description": "Utility for reseting asset properties when exiting Play Mode\n\nUse this to avoid unwanted diffs in source control for Materials, ScriptableObjects or other assets that get modified during gameplay.",
+  "homepage": "https://github.com/gilzoide/unity-reset-after-play-mode",
+  "license": "Unlicense",
+  "author": {
+    "name": "Gil Barbosa Reis"
+  }
+}
