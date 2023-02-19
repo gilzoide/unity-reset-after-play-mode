@@ -1,0 +1,25 @@
+# Reset After Play Mode
+Editor-only `ScriptableObject` that resets other assets' properties after exiting Play Mode.
+
+Use this to avoid unwanted diffs in source control for `Material`s, `ScriptableObject`s or other assets that get modified during gameplay.
+
+
+## How to install
+Install using the [Unity Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
+with the following URL:
+
+```
+https://github.com/gilzoide/unity-reset-after-play-mode.git
+```
+
+Alternatively, just copy the [ResetAfterPlayMode.cs](Editor/ResetAfterPlayMode.cs) script into your project. Since it works in the editor only, feel free to add it inside an `Editor` folder to avoid the script being included in builds.
+
+
+## How to use
+1. Use the `Assets -> Create -> Reset After Play Mode` menu item to create an instance of the `ResetAfterPlayMode` object in your project.
+   
+   Since it works in the editor only, make sure to save this new asset to an `Editor` folder to avoid it getting included in builds.
+2. Add the assets that should be reset after exiting play mode in its `Assets` list.
+3. Play the game. Modify the assets however you want during gameplay.
+4. After exiting Play Mode, check that the assets are back to their initial state.
+5. Enjoy 🍾
