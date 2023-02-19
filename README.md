@@ -9,7 +9,7 @@ Install using the [Unity Package Manager](https://docs.unity3d.com/Manual/upm-ui
 with the following URL:
 
 ```
-https://github.com/gilzoide/unity-reset-after-play-mode.git
+https://github.com/gilzoide/unity-reset-after-play-mode.git#1.0.0
 ```
 
 Alternatively, just copy the [ResetAfterPlayMode.cs](Editor/ResetAfterPlayMode.cs) script into your project. Since it works in the editor only, feel free to add it inside an `Editor` folder to avoid the script being included in builds.
