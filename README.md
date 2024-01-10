@@ -1,18 +1,23 @@
 # Reset After Play Mode
+[![openupm](https://img.shields.io/npm/v/com.gilzoide.reset-after-play-mode?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.gilzoide.reset-after-play-mode/)
+
 Editor-only `ScriptableObject` that resets other assets' properties after exiting Play Mode.
 
 Use this to avoid unwanted diffs in source control for `Material`s, `ScriptableObject`s or other assets that get modified during gameplay.
 
 
 ## How to install
-Install using the [Unity Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
-with the following URL:
-
-```
-https://github.com/gilzoide/unity-reset-after-play-mode.git#1.0.0
-```
-
-Alternatively, just copy the [ResetAfterPlayMode.cs](Editor/ResetAfterPlayMode.cs) script into your project. Since it works in the editor only, feel free to add it inside an `Editor` folder to avoid the script being included in builds.
+Either:
+- Use the [openupm registry](https://openupm.com/) and install this package using the [openupm-cli](https://github.com/openupm/openupm-cli):
+  ```
+  openupm add com.gilzoide.reset-after-play-mode
+  ```
+- Install using the [Unity Package Manager](https://docs.unity3d.com/Manual/upm-ui-giturl.html) with the following URL:
+  ```
+  https://github.com/gilzoide/unity-reset-after-play-mode.git#1.0.0
+  ```
+- Clone this repository or download a snapshot of it directly inside your project's `Assets` or `Packages` folder.
+- Just copy the [ResetAfterPlayMode.cs](Editor/ResetAfterPlayMode.cs) script into your project. Since it works in the editor only, feel free to add it inside an `Editor` folder to avoid the script being included in builds.
 
 
 ## How to use

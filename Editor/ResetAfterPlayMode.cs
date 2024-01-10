@@ -23,8 +23,8 @@ namespace Gilzoide.ResetAfterPlayMode.Editor
         private static IEnumerable<ResetAfterPlayMode> FindAllResetAfterPlayModeAssets()
         {
             return AssetDatabase.FindAssets($"t:{nameof(ResetAfterPlayMode)}")
-                            .Select(AssetDatabase.GUIDToAssetPath)
-                            .Select(AssetDatabase.LoadAssetAtPath<ResetAfterPlayMode>);
+                .Select(AssetDatabase.GUIDToAssetPath)
+                .Select(AssetDatabase.LoadAssetAtPath<ResetAfterPlayMode>);
         }
 
         private readonly Dictionary<Object, string> _assetsData = new Dictionary<Object, string>();
